@@ -191,4 +191,3 @@ export const Home = [
     imageid4: "https://images.unsplash.com/photo-1578898887932-1b6a29f3a8b8"
   }
 ];
-
