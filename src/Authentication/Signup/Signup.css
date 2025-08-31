@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 1px;
+    border: 5px solid #fff; 
+}
+
+.signup-container span{
+    color: rgb(12, 12, 12);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.signup-container form{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.signup-container button{
+    color: silver;
+    background-color: rgb(12, 12, 12);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}

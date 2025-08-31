@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+
+.signin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signin-container h1 {
+    color: rgb(24, 175, 212);
+}
+.signin-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
