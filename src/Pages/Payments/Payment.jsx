@@ -13,9 +13,6 @@ const Payment = () => {
 
   const paymentMethods = [
     { id: "upi", label: "UPI" },
-    { id: "card", label: "Credit/Debit Card" },
-    { id: "netbanking", label: "Net Banking" },
-    { id: "cash", label: "Cash on Arrival" },
   ];
 
   const upiApps = [
@@ -55,34 +52,7 @@ const Payment = () => {
           </div>
         )}
       </div>
-    ),
-    card: (
-      <div>
-        <h3>Card Payment</h3>
-        <input type="text" placeholder="Card Number" />
-        <input type="text" placeholder="MM/YY" />
-        <input type="text" placeholder="CVV" />
-        <button>Pay Now</button>
-      </div>
-    ),
-    netbanking: (
-      <div>
-        <h3>Net Banking</h3>
-        <select>
-          <option>Select Bank</option>
-          <option>SBI</option>
-          <option>HDFC</option>
-          <option>ICICI</option>
-        </select>
-        <button>Proceed</button>
-      </div>
-    ),
-    cash: (
-      <div>
-        <h3>Cash on Arrival</h3>
-        <p>You will pay at the resort reception.</p>
-      </div>
-    ),
+    )
   };
 
   return (
@@ -125,15 +95,13 @@ const Payment = () => {
       <div className="note">
         <h1>NOTE:</h1>
         <p>
-          We did not have back end for our project looking for a backend
-          developer. We hope we will refill this issue as soon as possible.
+          We are currently in the process of setting up our backend system and will have it ready soon.
         </p>
         <h3>
-          To order a product please have a quick 1-minute call or message us on
-          WhatsApp.
+          In the meantime, to place an order, please reach out to us via a quick call or WhatsApp message.
         </h3>
-        <h4>Contact us: 9876543211</h4>
-        <h4>To text us on WhatsApp please click below</h4>
+        <h4>📞 Contact: 9876543211</h4>
+        <h4>💬 WhatsApp: [Click here to chat]</h4>
 
         <a
           href="https://wa.me/9154328747"
@@ -143,10 +111,10 @@ const Payment = () => {
           <button className="whatsapp-btn">WhatsApp</button>
         </a>
 
-        <p>Right now we have 2 payment methods:</p>
+        <p>At present, we offer the following payment options:</p>
         <h4>1. UPI</h4>
-        <h4>2. Pay on Delivery</h4>
-        <p>These 2 payment methods are available.</p>
+        <h4>2. Cash on Delivery</h4>
+        <p>We appreciate your patience and support as we continue improving our services.</p>
       </div>
     </div>
   );

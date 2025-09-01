@@ -2,6 +2,7 @@ import React from 'react'
 import HomePage from "../../Home/Home";
 import { useNavigate } from 'react-router-dom';
 import {Home} from "../../../Data/Pages/Sweat-Shirts/Data";
+import Footer from "../../Footer/Footer"
 
 function Sweatshirt() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ function Sweatshirt() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

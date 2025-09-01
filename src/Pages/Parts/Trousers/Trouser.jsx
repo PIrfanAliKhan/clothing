@@ -2,6 +2,7 @@ import React from 'react'
 import HomePage from "../../Home/Home";
 import {Home } from "../../../Data/Pages/Trousers/Data";
 import { useNavigate } from 'react-router-dom';
+import Footer from "../../Footer/Footer"
 
 function Trouser() {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ function Trouser() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

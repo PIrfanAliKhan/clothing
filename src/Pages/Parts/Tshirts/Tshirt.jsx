@@ -3,6 +3,7 @@ import { Home } from "../../../Data/Pages/T-shirts/Data";
 import HomePage from "../../Home/Home";
 import "./Tshirt.css";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../Footer/Footer"
 
 function Tshirt() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ function Tshirt() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }

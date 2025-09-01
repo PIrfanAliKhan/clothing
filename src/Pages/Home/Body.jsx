@@ -4,6 +4,7 @@ import "./Home.css";
 import PageHome from "./Home";
 import Popular from "./Popular";
 import Recommendation from "./Recommendation";
+import Footer from "../Footer/Footer.jsx";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useNavigate } from "react-router-dom";
 
@@ -28,6 +29,7 @@ function Body() {
 
       <Recommendation />
       <Popular />
+      <Footer/>
     </div>
   );
 }

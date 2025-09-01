@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import {logo} from "../../Data/Home/Content"
 import { Home } from "../../Data/Pages/T-shirts/Data";
+import Footer from "../Footer/Footer";
 import "./Detail.css";
 
 function Detail() {
@@ -103,6 +104,7 @@ function Detail() {
         </div>
       </div>
     </div>
+    <Footer/>
     </>
   );
 }
