@@ -15,6 +15,7 @@
   justify-content: space-around;
   position: fixed;
   z-index: 100;
+  overflow-y: hidden;
 }
 
 .menu-icon {
@@ -27,12 +28,46 @@
   cursor: pointer;
 }
 
-.nav-link {
-  display: flex;
+/* Submenu style */
+.nav-link ul li {
+  position: relative;
+  list-style: none;
 }
+
+.submenu {
+  position: absolute;
+  top: 100%; /* directly under parent link */
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px 0;
+  border-radius: 8px;
+  display: none;
+  min-width: 180px;
+  z-index: 1001;
+}
+
+.submenu li {
+  padding: 10px 20px;
+  color: #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submenu li:hover {
+  background: #ffd369;
+  color: #000;
+}
+
+/* Show submenu on hover */
+.nav-link ul li:hover .submenu {
+  display: block;
+}
+
 
 .nav-link ul {
   list-style: none;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   gap: 35px;
@@ -41,6 +76,8 @@
 .nav-link li {
   color: #fff;
   font-size: 20px;
+  
+  overflow-y: hidden;
   font-weight: 550;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -48,11 +85,14 @@
 
 .nav-link li:hover {
   color: #f1c40f;
+  
+  overflow-y: hidden;
 }
 
 .nav-link button {
   background: #f1c40f;
   border: none;
+  overflow-y: hidden;
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
@@ -62,10 +102,12 @@
 
 .nav-link button:hover {
   background: #d4ac0d;
+  overflow-y: hidden;
 }
 
 .nav-link a {
   text-decoration: none;
+  overflow-y: hidden;
   color: #000;
 }
 

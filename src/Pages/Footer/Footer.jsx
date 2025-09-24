@@ -12,6 +12,8 @@ function Footer() {
       <div className="footer-right">
         <p><strong>Phone:</strong> +91 9876543211</p>
         <p><strong>Email:</strong> gujjuu@gmail.com</p>
+        
+        <p><strong>Instagram:</strong> zenoverse_2025</p>
         <p className="footer-support">
           For customer support, feel free to contact us.
         </p>

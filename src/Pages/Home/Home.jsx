@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import { logo, heroimg } from "../../Data/Home/Content";
-import { FaBars, FaTimes } from "react-icons/fa"; 
+import Logo from "../../Data/Home/Logo.jpg";
+import { heroimg } from "../../Data/Home/Content";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,22 +13,50 @@ function Home() {
 
   return (
     <div>
+      {/* Navbar */}
       <div className="navbar">
         <div className="menu-icon" onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />} 
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
 
         <div className="logo">
           <Link to="/">
-          <img src={logo} alt="logo" />
+            <img src={Logo} alt="logo" />
           </Link>
         </div>
 
         <div className={`nav-link ${menuOpen ? "active" : ""}`}>
           <ul>
-            <li onClick={closeMenu}>Categories</li>
-            <li onClick={closeMenu}>About</li>
-            <li onClick={closeMenu}>Contact Us</li>
+            {/* Categories with submenu */}
+            <li>
+              Categories
+              <ul className="submenu">
+                <li>Resorts</li>
+                <li>Spa</li>
+                <li>Adventure</li>
+                <li>Farm House</li>
+              </ul>
+            </li>
+
+            {/* About with submenu */}
+            <li>
+              About
+              <ul className="submenu">
+                <li>Who We Are</li>
+                <li>Our Vision</li>
+                <li>Careers</li>
+              </ul>
+            </li>
+
+            {/* Contact with submenu */}
+            <li>
+              Contact Us
+              <ul className="submenu">
+                <li>Email: info@example.com</li>
+                <li>Phone: +91 9876543210</li>
+              </ul>
+            </li>
+
             <li>
               <button onClick={closeMenu}>
                 <Link to="/signup">Signup</Link>
@@ -37,6 +66,7 @@ function Home() {
         </div>
       </div>
 
+      {/* Hero Section */}
       <div className="heroimage">
         <img src={heroimg} alt="heroimage" />
         <div className="caption">
@@ -44,8 +74,6 @@ function Home() {
           <button>EXPLORE OFFERS</button>
         </div>
       </div>
-
-      
     </div>
   );
 }
